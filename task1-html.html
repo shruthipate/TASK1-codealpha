@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head> 
+<body>
+ <div class="image">
+<img src="https://cdn.hswstatic.com/gif/celsius-convert.jpg">
+</img>
+ <link rel="stylesheet" href="codeAlpha_temp_converter.css"/>
+<script src="codeAlpha_temp_converter.js" async></script>
+<div class="temperature">
+<h1>TEMPERATURE CONVERTER</h1>
+<p>Value to convert</p>
+<label for="">""</label>
+<input type="number" placeholder="VALUE TO CONVERT TEMPERATURE" name="value" id="input_value"/>
+<p>From</p>
+<label for=""> ""</label>
+<select  name="input" id="input">
+<option value="select" id="select">SELECT TEMPERATURE UNIT</option>
+<option value="kel" id="kel">kelvin [°K]</option>
+<option value="cel" id="cel">celsius [°C]</option>
+<option value="far"id="far">fahrenheit [°F]</option>
+</select>
+<p>To</p>
+<label for="">""</label>
+<select name="output" id="output" >
+<option value="select" id="select">SELECT TEMPERATURE UNIT</option>
+<option value="kel" id="kel">kelvin [°K]</option>
+<option value="cel" id="cel">celsius [°C]</option>
+<option value="far"id="far">fahrenheit [°F]</option>
+</select>
+<p>convert</p>
+<label for="">""</label>
+<input class="button" type="submit" id="convert" onclick="Temp()" >
+<p>Result</p>
+<label for="">""</label>
+<input type="number" placeholder="VIEW RESULT" id="r" disabled>
+<output id="r"></output>
+</div>
+</div>
+</body>
+</html>
